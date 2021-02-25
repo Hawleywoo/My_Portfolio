@@ -1,4 +1,4 @@
-$yellow: #FDD35D;
+$yellow: #FDD35D80;
 $purple: #190B28;
 $cream: #F1F7ED;
 $blue: #496A81;
@@ -10,13 +10,25 @@ body{
     text-align: center;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 section{
-    padding: 30vh 0;
+    padding: 50vh 0;
 }
 
 .one{
     position: relative;
-    background-color: $yellow;
+    background: linear-gradient($yellow, $yellow), url(../img/thai-an-t2Beq-N9_9g-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    margin-bottom: -10vw;
+    z-index: 20;
 }
 
 .one::before, .one::after{
@@ -25,7 +37,7 @@ section{
     width: 150px;
     height: 150px;
     background-color: $yellow;
-    bottom: -10px;
+    bottom: -20px;
 }
 
 .one::before{
@@ -42,11 +54,11 @@ section{
 
 .two{
     background-color: $lighter-red;
-    // margin-bottom: -10vh;w
+    // margin-bottom: -10vh;
     position: relative;
     z-index: 10;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-    margin-bottom: -10vw;
+    clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 20vw));
+    margin-bottom: -20vw ;
 }
 
 .two__image{
@@ -54,7 +66,14 @@ section{
 }
 
 .three{
+    position: relative;
     background-color: $purple-blue;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12vw), 0 100%);
+    margin-bottom: -12vw;
+}
+
+.four{
+    background-color: $blue;
 }
 
 .header{

@@ -2,13 +2,27 @@ body {
   text-align: center;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 section {
-  padding: 30vh 0;
+  padding: 50vh 0;
 }
 
 .one {
   position: relative;
-  background-color: #FDD35D;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FDD35D80), to(#FDD35D80)), url(../img/thai-an-t2Beq-N9_9g-unsplash.jpg);
+  background: linear-gradient(#FDD35D80, #FDD35D80), url(../img/thai-an-t2Beq-N9_9g-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+  z-index: 20;
 }
 
 .one::before, .one::after {
@@ -16,8 +30,8 @@ section {
   content: '';
   width: 150px;
   height: 150px;
-  background-color: #FDD35D;
-  bottom: -10px;
+  background-color: #FDD35D80;
+  bottom: -20px;
 }
 
 .one::before {
@@ -38,9 +52,9 @@ section {
   background-color: #EC695B;
   position: relative;
   z-index: 10;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-  margin-bottom: -10vw;
+  -webkit-clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 20vw));
+          clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 20vw));
+  margin-bottom: -20vw;
 }
 
 .two__image {
@@ -49,7 +63,15 @@ section {
 }
 
 .three {
+  position: relative;
   background-color: #4C5F94;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12vw), 0 100%);
+  margin-bottom: -12vw;
+}
+
+.four {
+  background-color: #496A81;
 }
 
 .header__title {
