@@ -23,59 +23,62 @@ section {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
   margin-bottom: -10vw;
   z-index: 20;
-}
-
-.one::before, .one::after {
-  position: absolute;
-  content: '';
-  width: 150px;
-  height: 150px;
-  background-color: #FDD35D80;
-  bottom: -20px;
-}
-
-.one::before {
-  right: 50%;
-  -webkit-transform: skew(0, 20deg);
-          transform: skew(0, 20deg);
-  z-index: 100;
-}
-
-.one::after {
-  left: 50%;
-  -webkit-transform: skew(0, -20deg);
-          transform: skew(0, -20deg);
-  z-index: 100;
+  opacity: .80;
 }
 
 .two {
   background-color: #EC695B;
+  margin-bottom: -10vh;
   position: relative;
   z-index: 10;
-  -webkit-clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 20vw));
-          clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% calc(100% - 10vw), 0 calc(100% - 20vw));
-  margin-bottom: -20vw;
+  -webkit-clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% 100%, 0 calc(100% - 10vw));
+          clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% 100%, 0 calc(100% - 10vw));
+  margin-bottom: -10vw;
 }
 
 .two__image {
   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
           clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  width: 60%;
 }
 
 .three {
   position: relative;
-  background-color: #4C5F94;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4C5F9480), to(#4C5F9480)), url(../img/julien-pianetti-Cr9hZrpC1Oc-unsplash.jpg);
+  background: linear-gradient(#4C5F9480, #4C5F9480), url(../img/julien-pianetti-Cr9hZrpC1Oc-unsplash.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12vw), 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12vw), 0 100%);
   margin-bottom: -12vw;
+  opacity: .8;
 }
 
 .four {
   background-color: #496A81;
+  -webkit-clip-path: polygon(0 calc(0% + 12vw), 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 calc(0% + 12vw), 100% 0, 100% 100%, 0 100%);
 }
 
-.header__title {
+.one__title {
   margin: 0 auto;
-  color: #F1F7ED;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  opacity: .70;
+  background-color: #111;
+  width: 15%;
+  font-weight: 300;
+}
+
+@media (max-width: 568px) {
+  .one {
+    background-attachment: scroll;
+  }
 }
 /*# sourceMappingURL=main.css.map */
