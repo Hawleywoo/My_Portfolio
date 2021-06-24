@@ -6,6 +6,8 @@ const nav = document.querySelector('.nav')
 const navBack = document.querySelector('.nav__background')
 const navMenu = document.querySelector('.nav__menu')
 
+
+
 hamburger.addEventListener('click', () => {
     hamburgerOne.classList.toggle('hamburger__one--open')
     hamburgerTwo.classList.toggle('hamburger__two--open')

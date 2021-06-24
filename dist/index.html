@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"
+        integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ=="
+        crossorigin="anonymous"></script>
     <!-- <script type="application/javascript" src="titleMotion.js"></script>
     <script type="application/javascript" src="vehicle.js"></script> -->
     <link rel="stylesheet" href="./styles/styles.css">
     <title>AndrewHawley.live</title>
 </head>
+
 <body>
     <header></header>
     <main>
@@ -29,20 +33,73 @@
                 </div>
             </nav>
             <div>
-                <h1 class="one__title"> Andrew</h1>
+                <h1 class="one__title">Andrew HAWLEY</h1>
+                <h4>Software Engineer / Dog Lover</h4>
+                <button>Download Resume</button>
             </div>
         </section>
         <section class="about-me" id="about-me">
-            <h1>Part two</h1>
+            <div>
+                <h1>Part two</h1>
+                <p>Problem solving</p>
+                <p>Dog Lover</p>
+                <p></p>
+            </div>
+            <div>
+
+            </div>
         </section>
         <section class="skills" id="skills">
             <h1>Part three</h1>
+            <div>
+
+            </div>
         </section>
         <section class="apps" id="apps">
-            <h1>Part four</h1>
+            <h1>Some Of My Favorite Projects</h1>
+            <div class="apps__projects">
+                <div>
+                    <h3>Elevate Recovery Homes</h3>
+                    <p>React project for a local sober living facility. Built in React with preprocessor SASS.</p>
+                </div>
+                <div>
+                    <h3>Decadent Dough</h3>
+                    <p>React web app for local custom cookie business. Built in React using React Context and Firebase
+                        serverless auth and storage</p>
+                    <p>Clients can order cookies and business owner can keep track of current orders and paid invoices
+                        in admin panel.</p>
+                </div>
+                <div>
+                    <h3>Fluffy Finder</h3>
+                    <p>Mobile native app built in React Native. Mobile app that can take apicture of dog or upload from
+                        photos using Tensorflow.js and Google pretrained model to predict with percent of certainty </p>
+                    <p>Integrated external dog breed api for list of dog breeds as well as Ruby on Rails backend to
+                        handle auth. </p>
+                </div>
+
+            </div>
         </section>
         <section class="contact" id="contact">
             <h1>Part five</h1>
+            <div class="contact__form-container">
+                <form class="contact__form-container__form">
+                    <div>
+                        <label>Name:</label>
+                        <input name="name" value="" />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input name="email" value="" />
+                    </div>
+                    <div>
+                        <label>Message:</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Contact Me!"/>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
@@ -50,4 +107,5 @@
     </footer>
     <script type="application/javascript" src="index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,23 @@
+.apps{
+
+
+    &__projects{
+        display: flex;
+
+        & > div{
+            color: white;
+            flex: 33%;
+            max-width: 33%;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: $red;
+            border-radius: 20px;
+            box-shadow: 0 0 6px hsla(0, 0%,0%, .6);
+
+            & h3{
+                margin-bottom: .5rem;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}

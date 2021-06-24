@@ -4,19 +4,46 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: 'Lato', sans-serif;
 }
 
-body {
-  text-align: center;
+.apps__projects {
+  display: flex;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+.apps__projects > div {
+  color: white;
+  flex: 33%;
+  max-width: 33%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #EC695B;
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
-section {
-  padding: 50vh 0;
+.apps__projects > div h3 {
+  margin-bottom: .5rem;
+  letter-spacing: 3px;
+}
+
+.contact__form-container__form {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  margin: 0 auto;
+}
+
+.contact__form-container__form > div {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input[type=text], input[type=textarea] {
+  width: 100%;
 }
 
 .one {
@@ -33,7 +60,7 @@ section {
 }
 
 .one__title {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   padding: 10px 20px;
   color: #fff;
   font-family: 'Lato', sans-serif;
@@ -42,8 +69,27 @@ section {
   text-transform: uppercase;
   opacity: .70;
   background-color: #111;
-  width: 15%;
+  width: 35vw;
   font-weight: 300;
+}
+
+.one h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  opacity: .8;
+}
+
+body {
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  padding: 50vh 0;
 }
 
 .nav {
@@ -58,12 +104,16 @@ section {
 }
 
 .nav li {
-  padding: .5rem;
+  padding: .75rem 1rem;
+  margin: .5rem;
+  border-radius: 20px;
 }
 
 .nav li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 .nav li a:link {
@@ -76,17 +126,21 @@ section {
 
 .nav li:hover {
   transform: scale(1.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .nav__menu {
   list-style: none;
   margin: -1rem 1rem;
+  opacity: 0;
   transform: translate(15rem, -15rem);
-  transition: transform 1s ease;
+  transition: all 1s ease;
 }
 
 .nav__menu--open {
-  transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(-1rem, -1rem);
+  transition: all 1s ease;
 }
 
 .nav__background {
@@ -97,6 +151,7 @@ section {
   right: 0;
   top: 0;
   z-index: -1;
+  border-radius: 0 0 0 88%;
   transition: all 1s ease;
 }
 

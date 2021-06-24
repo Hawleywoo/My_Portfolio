@@ -1,6 +1,14 @@
 @import './base/base';
 @import './abstracts/variables';
 
+
+// Components
+@import './components/apps';
+@import './components/contact';
+@import './components/skills';
+@import './components/about-me';
+@import './components/title';
+
 body {
     text-align: center;
   }
@@ -14,34 +22,6 @@ body {
     padding: 50vh 0;
   }
   
-  .one {
-    position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FDD35D80), to(#FDD35D80)), url(../img/thai-an-t2Beq-N9_9g-unsplash.jpg);
-    background: linear-gradient(#FDD35D80, #FDD35D80), url(../img/thai-an-t2Beq-N9_9g-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-    margin-bottom: -10vw;
-    z-index: 20;
-    opacity: .80;
-
-    &__title {
-      margin: 0 auto;
-      padding: 10px 20px;
-      color: #fff;
-      font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 8px;
-      text-transform: uppercase;
-      opacity: .70;
-      background-color: #111;
-      width: 15%;
-      font-weight: 300;
-    }
-  }
 
   .nav{
     position: absolute;
@@ -54,11 +34,16 @@ body {
     width: 15rem;
 
     & li{
-      padding: .5rem;
+      padding: .75rem 1rem;
+      margin: .5rem;
+      border-radius: 20px;
     }
+    
     & li a{
       text-decoration: none;
-      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1rem;
     }
     
     & li a:link{
@@ -71,16 +56,20 @@ body {
 
     & li:hover{
       transform: scale(1.2);
+      box-shadow: 0 0 5px hsla(0, 0%, 0%, .4);
     }
 
     &__menu{
       list-style: none;
       margin: -1rem 1rem;
+      opacity: 0;
       transform: translate(15rem, -15rem);
-      transition: transform 1s ease;
-
+      transition: all 1s ease;
+      
       &--open{
-        transform: translate(0, 0);
+        opacity: 1;
+        transform: translate(-1rem, -1rem);
+        transition: all 1s ease;
       }
     }
 
@@ -92,6 +81,7 @@ body {
       right: 0;
       top: 0;
       z-index: -1;
+      border-radius: 0 0 0 88%;
       transition: all 1s ease;
 
       &--open{
